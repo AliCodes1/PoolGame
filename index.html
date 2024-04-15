@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Game Setup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="game-setup">
+        <h2>Start a New Game of Pool</h2>
+        <form action="/start-game" method="post">
+            <div class="form-group">
+                <label for="gameName">Game Name:</label>
+                <input type="text" id="gameName" name="gameName" required>
+            </div>
+            <div class="form-group">
+                <label for="player1">Player 1:</label>
+                <input type="text" id="player1" name="player1" required>
+            </div>
+            <div class="form-group">
+                <label for="player2">Player 2:</label>
+                <input type="text" id="player2" name="player2" required>
+            </div>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+    
+</body>
+</html>

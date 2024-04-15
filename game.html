@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Game</title>
+    <link rel="stylesheet" href="/static/css/game-style.css">
+</head>
+<body>
+    <div id="game-container" >
+        <div id="game-info">
+            <h1 id="game-title">Game: {{gameName}}</h1>
+            <div id="player-info">
+                <p id="player1-name">Player 1: {{player1Name}}</p>
+                <p id="player2-name">Player 2: {{player2Name}}</p>
+            </div>
+            <div id="player-turn">Player 1's Turn</div>
+            <div id="game-messages"></div>
+        </div>
+        <!-- <svg id="svg-container" width="800px" height="1571px" style="position: absolute;top: 0;left: 15%;"> -->
+
+
+        <!-- <div id="pool-table">
+             <svg id="svg-container" width="100%" height="100%" style="position: absolute; top: 0; left: 0;">
+                <line id="drawLine" x1="0" y1="0" x2="0" y2="0" stroke="black" stroke-width="10" visibility="hidden"/>
+            </svg>  
+    
+            <div id="svgs"></div>
+        </div> -->
+        
+        <div id="pool-table">
+            <!-- SVG content will be loaded here -->
+            <div id="svgs"></div>
+            <svg id="overlay-svg">
+                <line id="drawLine" x1="0" y1="0" x2="0" y2="0" stroke="black" stroke-width="5" visibility="hidden"></line>
+            </svg>
+        </div>
+        <!-- Overlay SVG for cue line -->
+       
+          
+        
+        <div id="game-controls">
+            <button id="reset-game">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/js/game-script.js"></script>
+</body>
+</html>
